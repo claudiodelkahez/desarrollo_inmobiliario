@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- stylesheet CSS -->
+        <link rel="stylesheet" href="./CSS/style.css" />
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="#Proyecto" alt="logo">DESARROLLADORA</a>
+            </div>
+
+            <nav>
+                <a href="#Proyecto">Proyecto</a>
+                <a href="#Masterplan">Masterplan</a>
+                <a href="#Plantas">Plantas</a>
+                <a href="#Avancedeobra">Avance de obra</a>
+                <a href="#Amenities">Amenities</a>
+                <a href="#Terminaciones">Terminaciones</a>
+                <a href="#Ubicacion">Ubicación</a>
+                <a href="#Contacto">Contacto</a>
+            </nav>
+            <div class="hero" id="Proyecto">
+                <img
+                    src="https://images.unsplash.com/photo-1615873968403-89e068629265?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1632&q=80"
+                    alt=""
+                />
+            </div>
+        </header>
+        <section class="detalles-desarrollo">.</section>
+
+        <section class="slider-fotos">
+            <div class="contenedor-slider_1">
+                <!--  <img
+                    src="https://images.unsplash.com/photo-1615876234886-fd9a39fda97f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80"
+                    alt=""
+                /> -->
+            </div>
+        </section>
+
+        <section class="masterplan" id="Masterplan"></section>
+        <section class="plantas" id="Plantas"></section>
+
+        <section class="slider-obra" id="Avancedeobra"></section>
+        <section class="slider-amenities" id="Amenities"></section>
+        <section class="slider-terminaciones" id="Terminaciones"></section>
+        <section class="ubicacion" id="Ubicacion"></section>
+        <section class="contacto" id="Contacto">
+
+            <form action="enviar.php" method="post">
+                <h2>Contacto</h2>
+                <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Nombre"
+                    required
+                />
+                <input
+                    type="email"
+                    name="correo"
+                    placeholder="Correo"
+                    required
+                />
+
+                <input
+                    type="number"
+                    name="telefono"
+                    placeholder="Teléfono"
+                    required
+                />
+                <textarea name="mensaje" placeholder="Escriba aqui su mensaje" required></textarea>
+                <input type="submit" value="ENVIAR" id="boton">
+            </form>
+        </section>
+        <footer>
+            <div class="redes-sociales"></div>
+            <div class="creditos"></div>
+        </footer>
+    </body>
+</html>
