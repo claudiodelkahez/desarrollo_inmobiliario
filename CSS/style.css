@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "Poppins", sans-serif;
 }
 /* <!-- Cabecera  --> */
 
@@ -40,7 +41,6 @@ nav {
     background-color: transparent;
 }
 a {
-
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
@@ -83,71 +83,196 @@ a:hover {
 /* <!-- Cabecera  --> */
 
 .detalles-desarrollo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
-    height: 300px;
-    background-color: darkgray;
+    min-height: 250px;
+    background-color: #f6f6f6;
 }
 
-/* <!-- Cabecera  --> */
-
-/* .slider-fotos {
-    width: 100%;
-    min-height: 100%;
-    background-color: darkkhaki;
-   margin: 10px;
-
+.informacion-desarrollo {
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-width: 220px;
+    height: 22 0px;
 }
-.contenedor-slider_1 {
-    width: 100%;
-   height: 100%;
-
+.informacion-desarrollo h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #27445d;
 }
-.contenedor-slider_1  img{
-    width: 100%;
+.informacion-desarrollo p {
+    text-align: center;
+    font-size: 3rem;
+    color: #77a4d3;
+    font-weight: 400;
+}
+/* <--MEMORIA PROYECTO -->*/
+
+.memoria-proyecto {
+    min-width: 50%;
     height: 100%;
-    object-fit: contain;
-    object-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
- */
+.descripcion-proyecto {
+    flex-direction: column;
+    height: 100%;
+    min-width: 50%;
+
+    padding: 3rem 1.5rem 3rem 1.5rem;
+}
+.descripcion-proyecto h2 {
+    padding: 1rem 0;
+    font-size: 3rem;
+}
+
+.descripcion-proyecto p {
+    padding: 1rem 0;
+    font-size: 1.6rem;
+}
+.iconos-proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+.contenedor-iconos {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    background-color: #f6f6f6;
+    margin: 1rem 1rem;
+}
+/* <--SLIDER FOTOS -->*/
+.slider-fotos {
+    padding: 2rem 1.5rem 0rem 1.5rem;   
+}
+/* <--MASTERPLAN -->*/
 
 .masterplan {
     width: 100%;
-    height: 500px;
-    background-color: darkred;
+    height: 100%;
+    background-color: #f6f6f6;
+    padding: 2rem 1.5rem 0rem 1.5rem;   
+
 }
+
+.masterplan h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #072946;
+}
+.masterplan p {
+    font-size: 1.4rem;
+    color: #153550;
+    text-transform: uppercase;
+}
+.masterplan-container {
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    padding: 2rem 0rem;
+}
+.masterplan-container img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    max-height: 600px;
+}
+/* <--PLANTAS -->*/
 
 .plantas {
     width: 100%;
-    height: 500px;
-    background-color: darkviolet;
+    height: 100%;
+    background-color: #f6f6f6;
+    padding: 2rem 1.5rem 0rem 1.5rem;   
+
 }
-.slider-obra {
+.plantas h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #072946;
+}
+.plantas p {
+    font-size: 1.4rem;
+    color: #153550;
+    text-transform: uppercase;
+}
+
+.plantas-container {
     width: 100%;
-    height: 500px;
-    background-color: deepskyblue;
+    min-height: 300px;
+    height: 100%;
+    padding: 2rem 0rem;
 }
-.slider-amenities {
+.plantas-container img {
+    object-fit: contain;
+    object-position: center;
     width: 100%;
-    height: 500px;
-    background-color: gold;
+    max-height: 600px;
 }
+/* <--ACANCE DE OBRA -->*/
+
+.avance-de_obra {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1.5rem 0rem 1.5rem;   
+}
+.avance-de_obra h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #072946;
+}
+
+/* <--SLIDER AMENITIES -->*/
+
+.amenities {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1.5rem 0rem 1.5rem;   
+}
+.amenities h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #072946;
+}
+
+/* <--SLIDER TERMINACIONES -->*/
+
 .slider-terminaciones {
     width: 100%;
     height: 500px;
     background-color: lightpink;
 }
+
+/* <--UBICACION -->*/
+
 .ubicacion {
     width: 100%;
     height: 500px;
     background-color: moccasin;
 }
+/* <--FORMULARIO DE CONTACTO -->*/
 
 .contacto {
     width: 100%;
     height: 500px;
     background-color: rosybrown;
 }
+
+/* <-- FOOTER -->*/
+
 footer {
     width: 100%;
     height: 50px;
