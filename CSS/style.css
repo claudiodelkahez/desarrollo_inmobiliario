@@ -127,17 +127,21 @@ a:hover {
     flex-direction: column;
     height: 100%;
     min-width: 50%;
-
-    padding: 3rem 1.5rem 3rem 1.5rem;
+    padding: 3rem 2rem 3rem 2rem;
 }
 .descripcion-proyecto h2 {
+    text-transform: uppercase;
     padding: 1rem 0;
     font-size: 3rem;
+    color: #072946;
+    font-weight: 200;
 }
 
 .descripcion-proyecto p {
     padding: 1rem 0;
     font-size: 1.6rem;
+    color: #4e4e4e;
+    font-weight: 200;
 }
 .iconos-proyecto {
     display: flex;
@@ -156,7 +160,7 @@ a:hover {
 }
 /* <--SLIDER FOTOS -->*/
 .slider-fotos {
-    padding: 2rem 1.5rem 0rem 1.5rem;   
+    padding: 2rem 1.5rem 0rem 1.5rem;
 }
 /* <--MASTERPLAN -->*/
 
@@ -164,8 +168,7 @@ a:hover {
     width: 100%;
     height: 100%;
     background-color: #f6f6f6;
-    padding: 2rem 1.5rem 0rem 1.5rem;   
-
+    padding: 2rem 1.5rem 0rem 1.5rem;
 }
 
 .masterplan h2 {
@@ -196,8 +199,7 @@ a:hover {
     width: 100%;
     height: 100%;
     background-color: #f6f6f6;
-    padding: 2rem 1.5rem 0rem 1.5rem;   
-
+    padding: 2rem 1.5rem 0rem 1.5rem;
 }
 .plantas h2 {
     font-size: 3rem;
@@ -227,7 +229,7 @@ a:hover {
 .avance-de_obra {
     width: 100%;
     height: 100%;
-    padding: 2rem 1.5rem 0rem 1.5rem;   
+    padding: 2rem 1.5rem 0rem 1.5rem;
 }
 .avance-de_obra h2 {
     font-size: 3rem;
@@ -240,7 +242,7 @@ a:hover {
 .amenities {
     width: 100%;
     height: 100%;
-    padding: 2rem 1.5rem 0rem 1.5rem;   
+    padding: 2rem 1.5rem 0rem 1.5rem;
 }
 .amenities h2 {
     font-size: 3rem;
@@ -260,21 +262,149 @@ a:hover {
 
 .ubicacion {
     width: 100%;
-    height: 500px;
-    background-color: moccasin;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+
 }
+
+.ubicacion-titulo {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #072946;
+    padding: 2rem 1.5rem 0rem 1.5rem;
+}
+
+.ubicacion-direccion {
+    font-size: 2.4rem;
+    color: #6a9dd1;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 2rem 1.5rem 0rem 1.5rem;
+}
+.ubicacion-descripcion {
+    font-size: 1.4rem;
+    color: #4e4e4e;
+    font-weight: 100;
+
+    padding: 2rem 1.5rem 0rem 1.5rem;
+}
+.ubicacion-mapa {
+   margin: auto;
+    width: 90%;
+    height: 100%;
+    padding: 2rem 0rem;
+}
+
 /* <--FORMULARIO DE CONTACTO -->*/
 
 .contacto {
     width: 100%;
-    height: 500px;
-    background-color: rosybrown;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0rem;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 768px;
+}
+
+form h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #072946;
+}
+
+input {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 2rem 1.5rem 0rem 1.5rem;
+    color: #072946;
+    margin: 1rem 0rem;
+    padding: 1rem;
+}
+form textarea {
+    margin: 1rem 0rem;
+    padding: 1rem;
+    height: 150px;
+}
+#boton {
+    max-width: 100px;
+    background-color: #072946;
+    color: #fff;
+    transform: scale(1);
+}
+#boton:hover {
+    transform: scale(1.01);
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+}
+.contacto-vendedores {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.vendedores h3 {
+    font-size: 1.6rem;
+    color: #072946;
+    margin: 1rem 0rem;
+}
+.vendedores p {
+    font-size: 1.4rem;
+    margin: 1rem 0rem;
+    color: #4e4e4e;
+}
 /* <-- FOOTER -->*/
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 100%;
-    height: 50px;
-    background-color: midnightblue;
+    height: 100%;
+    padding-top: 4rem;
+
+    background-color: #f6f6f6;
+}
+
+.direccion p {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #072946;
+    margin: 1rem 0rem;
+}
+.creditos {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4e4e4e;
+    margin: 3rem 0rem;
+}
+.creditos a {
+    text-transform: capitalize;
+    color: #4e4e4e;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.disclaimer {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #072946;
+}
+.disclaimer p {
+    font-size: 1.4rem;
+    padding: 1rem;
 }
