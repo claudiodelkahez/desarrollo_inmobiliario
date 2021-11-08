@@ -18,8 +18,7 @@
         />
 
     </head>
-    <body>
-        <header>
+      <header>
             <div class="logo">
                 <a href="#Proyecto" alt="logo">DESARROLLADORA</a>
             </div>
@@ -41,6 +40,8 @@
                 />
             </div>
         </header>
+    <body>
+      
         <!-- DETALLES DEL PROYECTO -->
         <section class="detalles-desarrollo">
             <div class="informacion-desarrollo">
@@ -84,14 +85,18 @@
                     <div class="contenedor-iconos_img">
                         <img src="./imagenes/icon-edificio.png" alt="" />
                     </div>
-                    <h3>3 Edificios + 4 Lotes</h3>
+                    <div class="contenedor-iconos_txt">
+                        <h3>3 Edificios + 4 Lotes</h3>
+                    </div>
                 </div>
                 <div class="contenedor-iconos">
                     <div class="contenedor-iconos_img">
                         <img src="./imagenes/icon-bed.png" alt="" />
                     </div>
-                    <h3>tipo de unidades</h3>
-                    <p>2 Y 3 DORMITORIOS</p>
+                    <div class="contenedor-iconos_txt">
+                        <h3>tipo de unidades</h3>
+                        <p>2 Y 3 DORMITORIOS</p>
+                    </div>
                 </div>
                 <div class="contenedor-iconos">
                     <div class="contenedor-iconos_img">
@@ -261,7 +266,9 @@
         </section>
         <!-- AVANCE DE OBRA -->
         <section class="avance-de_obra" id="Avancedeobra">
-            <h2>Avance de obra</h2>
+            <div class="avance-de_obra-descripcion">
+                <h2>Avance de obra</h2>
+            </div>
             <div class="slider-obra">
                 <div class="slider">
                     <!-- Slides -->
@@ -343,12 +350,15 @@
         </section>
         <!-- AMENITIES -->
         <section class="amenities" id="Amenities">
-            <h2>Amenities</h2>
-            <p>
+            <div class="amenities-descripcion">
+                <h2>Amenities</h2>
+                <p>
                 Espacios interior y exteriores diseñados para el disfrute de los
                 propietarios en los que prevalece la privacidad de los jardines
                 y sectores privados.
-            </p>
+                </p>
+            </div>
+
             <div class="slider-amenities">
                 <div class="slider">
                       <!-- Slides -->
@@ -429,6 +439,10 @@
         </section>
         <!-- TERMINACIONES -->
         <section class="slider-terminaciones" id="Terminaciones">
+            <h2>Terminaciones</h2>
+            <p>
+                Excelente calidad en todos los ambientes.
+            </p>
         </section>
         <!-- UBICACIÓN -->
         <section class="ubicacion" id="Ubicacion">
@@ -457,52 +471,53 @@
         </section>
         <!-- CONTACTO -->
         <section class="contacto" id="Contacto">
-            <form action="enviar.php" method="post">
-                <h2>Contacto</h2>
-                <input
-                    type="text"
-                    name="nombre"
-                    placeholder="Nombre"
-                    required
-                />
-                <input
-                    type="email"
-                    name="correo"
-                    placeholder="Correo"
-                    required
-                />
+            <h2>Contacto</h2>
 
-                <input
-                    type="number"
-                    name="telefono"
-                    placeholder="Teléfono"
-                    required
-                />
-                <textarea
-                    name="mensaje"
-                    placeholder="Escriba aqui su mensaje"
-                    required
-                ></textarea>
-                <input type="submit" value="ENVIAR" id="boton" />
-            </form>
-
-            <div class="contacto-vendedores">
-                <div class="vendedores">
-                    <h3>NARVAEZ</h3>
-                    <p>Av. Libertador 15 878/80, San Isidro, Bs. As.</p>
-                    <p>011 4743-2090</p>
-                </div>
-                <div class="vendedores">
-                    <h3>MIERES</h3>
-                    <p>Av. Sucre 1676, San Isidro, Bs. As.</p>
-                    <p>011 4737-4444</p>
-                </div>
-                <div class="vendedores">
-                    <h3>L.J. Ramos</h3>
-                    <p>Av. Sucre 2491, San Isidro, Bs. As.</p>
-                    <p>011 4719-9000</p>
+            <div>
+                <form action="enviar.php" method="post">
+                    <input
+                        type="text"
+                        name="nombre"
+                        placeholder="Nombre"
+                        required
+                    />
+                    <input
+                        type="email"
+                        name="correo"
+                        placeholder="Correo"
+                        required
+                    />
+    
+                    <input
+                        type="number"
+                        name="telefono"
+                        placeholder="Teléfono"
+                        required
+                    />
+                    <textarea
+                        name="mensaje"
+                        placeholder="Escriba aqui su mensaje"
+                        required
+                    ></textarea>
+                    <input type="submit" value="ENVIAR" id="boton" />
+                </form>
+    
+                <div class="contacto-vendedores">
+                    <div class="vendedores">
+                        <h3>NARVAEZ</h3>
+                        <p>Av. Libertador 15 878/80, San Isidro, Bs. As. <br>011 4743-2090</p>
+                    </div>
+                    <div class="vendedores">
+                        <h3>MIERES</h3>
+                        <p>Av. Sucre 1676, San Isidro, Bs. As. <br>011 4737-4444 </p>
+                    </div>
+                    <div class="vendedores">
+                        <h3>L.J. Ramos</h3>
+                        <p>Av. Sucre 2491, San Isidro, Bs. As. <br>011 4719-9000</p>
+                    </div>
                 </div>
             </div>
+            
         </section>
         <!-- FOOTER -->
         <footer>
