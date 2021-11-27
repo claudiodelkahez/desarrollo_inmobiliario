@@ -22,33 +22,52 @@ header {
     height: 100vh;
     margin-bottom: 100px;
 }
-.logo {
-    position: fixed;
-    top: 1.5rem;
-    left: 2rem;
-}
-.logo a {
-    font-size: 3rem;
-    background-color: rgb(98, 98, 98);
-}
+
 nav {
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 75px;
+    background: rgba(46, 46, 46, 0.424);
+    width: 100%;
+    height: 80px;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    margin: auto;
-    background-color: rgb(98, 98, 98);
-    z-index: 9999;
+    align-items: center;
+    position: fixed;
+    top: 0%;
+    transition: 0.5s;
 }
+/* Boton contacto */
+.navegacion a:last-child {
+    margin-left: 1em;
+    padding: 1em 1.7em;
+    border: 1px solid rgb(255, 0, 221);
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(255, 0, 221);
+    font-weight: bold;
+    transition: 0.2s ease-in;
+}
+.navegacion a:last-child:hover {
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color: rgb(255, 0, 221);
+}
+.navegacion a:last-child:after {
+    position: absolute;
+    background-color: transparent;
+}
+/* Boton contacto */
+
+.logo img {
+    width: 100%;
+    height: 80px;
+}
+
 a {
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #fff;
+    color: rgb(255, 255, 255);
+
     font-weight: bold;
     font-size: 1.4rem;
     padding: 0 10px;
@@ -57,7 +76,7 @@ a {
 a:after {
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: rgb(255, 0, 195);
     height: 3.5px;
     width: 0;
     left: 0;
@@ -69,7 +88,7 @@ a:hover:after {
     width: 100%;
 }
 a:hover {
-    color: #ffffff;
+    color: rgb(104, 104, 104);
 }
 
 .hero {
@@ -672,7 +691,6 @@ footer {
 
     .ubicacion-mapa {
         height: 650px;
-
     }
     /*    <!-- CONTACTO --> */
 
