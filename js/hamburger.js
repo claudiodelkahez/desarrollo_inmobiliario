@@ -12,7 +12,7 @@ const btnMobileMenu7 = document.getElementById('btn-mobile-menu7')
 function navToggle() {
     btn.classList.toggle('open')
     nav.classList.toggle('hidden')
-
+    document.body.classList.toggle('no-scroll')
 
 }
 btn.addEventListener('click', navToggle)
@@ -21,7 +21,7 @@ btn.addEventListener('click', navToggle)
 function ocultarMobile() {
     btn.classList.toggle('open')
     nav.classList.toggle('hidden')
- 
+    document.body.classList.toggle('no-scroll')
 }
 btnMobileMenu.addEventListener('click', ocultarMobile)
 btnMobileMenu1.addEventListener('click', ocultarMobile)

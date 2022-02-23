@@ -642,7 +642,7 @@ footer {
 }
 .mobile-menu a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     color: #777;
     cursor: pointer;
 
@@ -662,7 +662,7 @@ footer {
     width: 100%;
     height: 100%;
     padding: 30px;
-    transition: all 300ms ease-in;
+    transition: all 350ms ease-out;
 }
 
 .hidden {
@@ -683,12 +683,15 @@ footer {
         display: none;
     }
     nav {
-        background: #fff;
+        background: rgba(255, 255, 255, 0.952);
+        height: 50px;
+    }
+    .logo img {
+        height: 54px;
     }
 }
 
-
-@media only screen and (min-width: 900px) {
+@media (min-width: 900px) {
     /*    <!-- DETALLES DEL PROYECTO --> */
     .detalles-desarrollo {
         max-width: 1200px;
