@@ -23,7 +23,7 @@
                 <div class="logo">
                     <img src="./imagenes/logo.jpeg" alt="logo">
                 </div>
-              <div class="navegacion">
+                <div class="navegacion">
                 <a href="#Proyecto">Proyecto</a>
                 <a href="#Masterplan">Masterplan</a>
                 <a href="#Plantas">Plantas</a>
@@ -32,8 +32,30 @@
                 <a href="#Terminaciones">Terminaciones</a>
                 <a href="#Ubicacion">Ubicación</a>
                 <a href="#Contacto">Contacto</a>
-              </div>
+                </div>
+              <!-- Hamburger Menu -->
+              <button type="button" class="hamburger" id="menu-btn">
+                  <span class="hamburger-top"></span>
+                  <span class="hamburger-middle"></span>
+                  <span class="hamburger-botton"></span>
+              </button>
+
             </nav>
+
+            <!-- Mobile menu -->
+            <div class="mobile-menu hidden" id="menu">
+                <ul>
+                   <li ><a href="#Proyecto" id="btn-mobile-menu">Proyecto</a></li>
+                   <li><a href="#Masterplan" id="btn-mobile-menu1">Masterplan</a></li>
+                   <li><a href="#Plantas" id="btn-mobile-menu2">Plantas</a></li>
+                   <li><a href="#Avancedeobra" id="btn-mobile-menu3">Avance de obra</a></li>
+                   <li><a href="#Amenities" id="btn-mobile-menu4">Amenities</a></li>
+                   <li><a href="#Terminaciones" id="btn-mobile-menu5">Terminaciones</a></li>
+                   <li><a href="#Ubicacion" id="btn-mobile-menu6">Ubicación</a></li>
+                   <li><a href="#Contacto" id="btn-mobile-menu7">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- HERO IMG -->
             <div class="hero" id="Proyecto">
                 <img
                     src="./imagenes/22122020-ca-arq-ph-g-viramonte-3110-editar-copy.jpg"
@@ -551,8 +573,9 @@
                 </p>
             </div>
         </footer>
-    <script src="./slide.js"></script>
-    <script src="./menu.js"></script>
+  
+    <script src="./js/menu.js"></script>
+    <script src="./js/hamburger.js"></script>
 
     </body>
 </html>

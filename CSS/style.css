@@ -20,6 +20,8 @@ body {
 
 header {
     height: 100vh;
+    width: 100%;
+    z-index: 999;
     margin-bottom: 100px;
 }
 
@@ -28,11 +30,17 @@ nav {
     width: 100%;
     height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0%;
     transition: 0.5s;
+}
+
+.navegacion {
+    position: absolute;
+    right: 10px;
+    display: block;
 }
 /* Boton contacto */
 .navegacion a:last-child {
@@ -277,7 +285,7 @@ a:hover {
 
 .prev-btn,
 .next-btn {
-    z-index: 999;
+    z-index: 20;
     font-size: 2em;
     color: #222;
     background: rgba(255, 255, 255, 0.8);
@@ -581,6 +589,104 @@ footer {
     font-size: 1.4rem;
     padding: 1rem;
 }
+
+/* <-- HAMBURGUER MENU ICON-->*/
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 240ms;
+    display: none;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-botton {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 24px;
+    height: 2px;
+    background: #000000;
+    transform: rotate(0);
+    transition: all 500ms;
+}
+.hamburger-middle {
+    transform: translateY(7px);
+}
+.hamburger-botton {
+    transform: translateY(14px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.open .hamburger-middle {
+    display: none;
+}
+.open .hamburger-botton {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+/* MOBILE MENU */
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    line-height: 3;
+}
+.mobile-menu a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #777;
+    cursor: pointer;
+
+    text-align: center;
+}
+.mobile-menu a:hover {
+    color: #000;
+}
+
+.mobile-menu {
+    text-decoration: none;
+    list-style: none;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    transition: all 300ms ease-in;
+}
+
+.hidden {
+    transform: translateX(100%);
+}
+.no-scroll {
+    overflow: hidden;
+}
+
+/* <-- MEDIA QUERIES-->*/
+
+@media (max-width: 1200px) {
+    .hamburger {
+        display: block;
+    }
+    .navegacion {
+        width: 100%;
+        display: none;
+    }
+    nav {
+        background: #fff;
+    }
+}
+
 
 @media only screen and (min-width: 900px) {
     /*    <!-- DETALLES DEL PROYECTO --> */
